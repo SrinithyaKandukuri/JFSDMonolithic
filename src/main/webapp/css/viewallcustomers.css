@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@600&display=swap');
+
+
+
+.body {
+    background-color: #d9ecf2;
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding-bottom: 25%;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center; /* Center the content */
+}
+
+.table {
+    width: 100%; /* Ensure the table takes full width */
+    height: 50%;
+}
+
+.h2 {
+    color: #444;
+    font-family: 'PT Sans', sans-serif;
+}
+
+thead {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #666;
+}
+
+
+.name {
+    display: inline-block;
+    text-align: left; /* Align text to the left */
+    width: 200px; /* Set a specific width for the name column */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.table thead th.name,
+.table td.name {
+    width: 200px; /* Set a specific width for the name column */
+}
+.bg-blue {
+    background-color: #EBF5FB;
+    border-radius: 8px;
+}
+
+.fa-check,
+.fa-minus {
+    color:#dda0dd;
+}
+
+.bg-blue:hover {
+    background-color: #dda0dd;
+    color: #eee;
+    cursor: pointer;
+}
+
+.bg-blue:hover .fa-check,
+.bg-blue:hover .fa-minus {
+    background-color: #dda0dd;
+    color: #eee;
+}
+
+.table thead th,
+.table td {
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+.table tbody td:first-child {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.table tbody td:last-child {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#spacing-row {
+    height: 10px;
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding: 20px 10px;
+    }
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
